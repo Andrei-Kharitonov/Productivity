@@ -1,0 +1,82 @@
+//<Обнуление стилей>=======================================
+@import "null";
+//<Обнуление стилей>=======================================
+
+
+
+//<Переменные>=============================================
+$font: "Quicksand";
+$minWidth: 320;
+$maxWidth: 1920;
+$maxWidthContainer: 890;
+$md1: $maxWidthContainer + 12;
+$md2: 990;
+$md3: 770;
+$md4: 480;
+//<Переменные>=============================================
+
+
+
+//<Оболочка>===============================================
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+//<Оболочка>===============================================
+
+
+
+//<Основная сетка>=========================================
+//<Адаптивность>===========================================
+/*.container {
+  max-width: $maxWidthContainer+px;
+  margin: 0 auto;
+  @media (max-width: $md1+px) {
+    max-width: 970px;
+  }
+  @media (max-width: $md2+px) {
+    max-width: 750px;
+  }
+  @media (max-width: $md3+px) {
+    max-width: none;
+    padding: 0 10px;
+  }
+}*/
+//<Адаптивность>===========================================
+
+//<Отзывчивость>===========================================
+.container {
+  max-width: $maxWidthContainer+px;
+  margin: 0 auto;
+  @media (max-width: $md1+px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+//<Отзывчивость>===========================================
+//<Основная сетка>=========================================
+
+
+
+//<Стили>==================================================
+body {font-family: $font;}
+
+@import "bloks";
+@import "iconfont";
+
+@import "header";
+@import "first-screen";
+@import "logos";
+@import "plan";
+@import "about-us";
+@import "start";
+@import "blog";
+@import "quotes";
+@import "faq";
+@import "get-started";
+@import "newsletter";
+@import "footer";
+//<Стили>==================================================

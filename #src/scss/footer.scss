@@ -1,0 +1,73 @@
+//<footer>=================================================
+.footer {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  @media (max-width: $md3+px) {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  // .header__container
+  &__container {
+    max-width: 1200px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+  }
+  // .header__logo
+  &__logo {
+    flex: 0 0 26px;
+    width: 26px;
+    height: 26px;
+    background: #5e81fe;
+    border-radius: 50px;
+  }
+  // .header__menu
+  &__menu {
+    height: 80px;
+    margin-left: 70px;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    @media (max-width: $md2+px) {
+      margin-left: 10px;
+    }
+    @media (max-width: $md3+px) {
+      margin-left: 0;
+    }
+  }
+  // .header__icons
+  &__social {
+    margin-left: auto;
+  }
+  // .header__icon
+  &__icon {
+    display: inline-block;
+    color: #b6bac7;
+    margin: 0 9px;
+    padding: 7px;
+    transition: color 0.3s;
+    &:hover {
+      color: #6188ff;
+    }
+    @media (max-width: $md2+px) {
+      margin: 0 6px;
+      padding: 3px;
+    }
+    @media (max-width: $md4+px) {
+      margin: 0;
+      padding: 5px;
+      display: inline;
+    }
+  }
+  // .header__btn
+  &__btn {
+    margin-left: 40px;
+    @media (max-width: $md2+px) {
+      margin-left: 27px;
+    }
+    @media (max-width: $md3+px) {
+      margin-left: 8px;
+    }
+  }
+}
+//<footer>=================================================

@@ -1,0 +1,26 @@
+.logos {
+  border-bottom: 1px solid #d8e3fe;
+  // .logos__container
+  &__container {
+    min-height: 145px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    @media (max-width: $md3+px) {
+      justify-content: center;
+    }
+  }
+  // .logos__icon
+  &__icon {
+    font-size: 25px;
+    color: #d6dae5;
+    transition: 0.4s;
+    &:hover {
+      color: #5982e7;
+    }
+    @media (max-width: $md3+px) {
+      margin: 15px;
+    }
+  }
+}
