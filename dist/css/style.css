@@ -1279,6 +1279,18 @@ body {
   color: #8E96B7;
 }
 
+.accordion__header_active .accordion__title {
+  color: #495274;
+}
+
+.accordion__header_active .accordion__title::before {
+  border-right: 3px solid #495274;
+  border-bottom: 3px solid #495274;
+  -webkit-transform: rotate(-135deg);
+      -ms-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+
 .accordion__title {
   cursor: pointer;
   padding: 12px 0;
@@ -1311,24 +1323,9 @@ body {
           transform: rotate(45deg);
 }
 
-.accordion__title_active {
-  color: #495274;
-}
-
-.accordion__title_active::before {
-  border-right: 3px solid #495274;
-  border-bottom: 3px solid #495274;
-  -webkit-transform: rotate(-135deg);
-      -ms-transform: rotate(-135deg);
-          transform: rotate(-135deg);
-}
-
 .accordion__body {
   height: 0;
   overflow: hidden;
-}
-
-.accordion__body_active {
   height: auto;
   padding-bottom: 30px;
   margin-left: 60px;
@@ -1339,6 +1336,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  /*&_active {
+      
+    }*/
 }
 
 .accordion__text {
@@ -1931,7 +1931,7 @@ body {
     font-weight: 500;
   }
 
-  .accordion__body_active {
+  .accordion__body {
     margin-left: 10px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

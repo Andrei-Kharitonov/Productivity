@@ -62,23 +62,14 @@ const swiperQuotes = new Swiper(".swiper-quotes", {
 
 
 //accordion
-accordion1.onclick = function () {
-  accordion1.classList.toggle("accordion__title_active");
-  accordion__body1.classList.toggle("accordion__body_active");
-}
-accordion2.onclick = function () {
-  accordion2.classList.toggle("accordion__title_active");
-  accordion__body2.classList.toggle("accordion__body_active");
-}
-accordion3.onclick = function () {
-  accordion3.classList.toggle("accordion__title_active");
-  accordion__body3.classList.toggle("accordion__body_active");
-}
-accordion4.onclick = function () {
-  accordion4.classList.toggle("accordion__title_active");
-  accordion__body4.classList.toggle("accordion__body_active");
-}
-accordion5.onclick = function () {
-  accordion5.classList.toggle("accordion__title_active");
-  accordion__body5.classList.toggle("accordion__body_active");
-}
+$(function () {
+
+  $(".accordion__body").hide();
+
+  $(".accordion__header").click(function () {
+    let accordBody = $(this).next();
+    $(accordBody).toggle(400);
+    $(this).toggleClass("accordion__header_active");
+  });
+
+});
